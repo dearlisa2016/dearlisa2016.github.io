@@ -1,0 +1,304 @@
+/* reset part */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	display: block;
+	color: #fff;
+}
+
+/* common css */
+.clearfloat{
+	zoom:1;
+}
+.clearfloat:after{
+	display: block;
+	content: "";
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+body{
+	font-family: "Microsoft Yahei", verdana;
+	color: #9c9a9a;
+}
+h1{
+	font-size: 60px;
+	color: #fff;
+	text-shadow:2px 3px #000,4px 4px #fff;
+	line-height: 1.8em;
+}
+p{
+	font-size: 20px;
+	line-height: 1.5em;
+	
+}
+h3{
+	font-size: 24px;
+	color: #efecec;
+	line-height: 1.6em;
+}
+.section{
+	text-align: center;
+	background: #000;
+}
+.lang{
+	position: fixed;
+	top: 30px;
+	right: 30px;
+}
+.lang a{
+	padding: 5px 8px;
+	display: inline-block;
+}
+.lang .selected{
+	background: #9c9a9a;
+	border-radius: 5px;
+}
+
+/* profile part css */
+.profile img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid #9c9a9a;
+}
+.profile .position{
+	font-size: 24px;
+	color: #efecec;
+}
+.profile .email{
+	color: #efecec;
+	font-size: 18px;
+}
+.profile .quote{
+	font-size: 16px;
+	color: #9c9a9a;
+	margin-top: 16px;
+}
+.profile .down{
+	color: #9c9a9a;
+	font-size: 36px;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+}
+.profile .down i{
+	display: block;
+	position: relative;
+	left: -50%;
+}
+/* project part css */
+.projects .container{
+	width: 820px;
+	margin: 0 auto;
+	margin-top: 10px;
+
+}
+.projects .project1,.project2{
+	width: 400px;
+	height: 400px;
+	float: left;
+	overflow: hidden;
+}
+.projects .project1{
+	margin-right: 20px;
+	background: url("../img/project1.jpg") no-repeat center;
+	background-size: cover;
+}
+.projects .project2{
+	background: url("../img/project2.jpg") no-repeat center;
+	background-size: cover;
+}
+.projects .detail{
+	background: rgba(0,0,0,0.5);
+	width: 400px;
+	height: 400px;
+	display: none;
+
+}
+.projects .project1:hover .detail{
+	display: block;
+	display: table-cell;
+	vertical-align: middle;
+}
+.projects .project2:hover .detail{
+	display: block;
+	display: table-cell;
+	vertical-align: middle;
+}
+/* skills part css */
+.skills .row1{
+	width: 820px; /* for align center */
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.skills .row2{
+	width: 820px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+/* set bck-color & metro style */
+.skills .row1 .col1{
+	background: rgba(169,169,169,0.4);
+	float: left;
+	margin-right: 10px;
+}
+.skills .row1 .col2{
+	background: rgba(169,169,169,0.34);
+	float: left;
+	margin-right: 10px;
+}
+.skills .row1 .col3-row1{
+	background: rgba(169,169,169,0.18);
+	float: left;
+	margin-bottom: 10px;
+}
+.skills .row1 .col3-row2{
+	background: rgba(169,169,169,0.28);
+	float: left;
+}
+.skills .row2 .col1{
+	background: rgba(169,169,169,0.32);
+	float: left;
+	margin-right: 10px;
+}
+.skills .row2 .col2{
+	background: rgba(169,169,169,0.18);
+	float: left;
+	margin-right: 10px;
+}
+.skills .row2 .col3{
+	background: rgba(169,169,169,0.32);
+	float: left;
+}
+/* set div for img vertical-align center */
+.skills .row1 div,.skills .row2 div{
+	display: table-cell;
+	vertical-align: middle;
+}
+.skills .row1 .col1 div{
+	width: 320px;
+	height: 270px;
+}
+.skills .row1 .col2 div{
+	width: 160px;
+	height: 270px;
+}
+.skills .row1 .col3-row1 div{
+	width: 320px;
+	height: 130px;
+}
+.skills .row1 .col3-row2 div{
+	width: 320px;
+	height: 130px;
+}
+.skills .row2 .col1 div{
+	width: 320px;
+	height: 130px;
+}
+.skills .row2 .col2 div{
+	width: 320px;
+	height: 130px;
+}
+.skills .row2 .col3 div{
+	width: 160px;
+	height: 130px;
+}
+/* set img size */
+.skills .row1 img{
+	width: 95px;
+	height: 120px;
+}
+.skills .row1 .col3-row1 img{
+	width: 155px;
+	height: 120px;
+}
+.skills .row1 .col3-row2 img{
+	width: 250px;
+	height: 61px;
+}
+.skills .row2 img{
+	width: 100px;
+	height: 100px;
+}
+.skills .row1 a:hover,.skills .row2 a:hover{
+	background: rgba(169,169,169,0.54);
+}
+/* education part css*/
+.education .item{
+	margin-bottom: 10px;
+}
+.education .item .honor{
+	color: #fff;
+}
+.education .item .course{
+	font-size: 18px;
+}
+.education .item .date,.education .item .location{
+	font-size: 16px;
+	color: #696666;
+}
+/* experience part css*/
+.experience .container{
+	width: 800px;
+	height: 390px;
+	margin: 0 auto;
+	position: relative;
+	background: url("../img/job.jpg") no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+.experience .container .arrow{
+	position: absolute;
+	top: 40%;
+	font-size: 40px;
+	display: none;
+	color: rgba(255,255,255,0.6);
+	overflow: hidden;
+}
+.experience .container .prev{
+	left: 10px;
+}
+.experience .container .next{
+	right: 10px;
+}
+.experience .container:hover .arrow{
+	display: block;
+}
+.experience .container .arrow:hover{
+	color: #fff;
+}
+.experience .container .job-panel{
+	width: 1600px;
+	height: 390px;
+	position: absolute;
+}
+.experience .container .job-panel .job{
+	width: 690px;
+	height: 390px;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 55px;
+}
+.buttons {
+	position: absolute; 
+	height: 10px; 
+	width: 100px; 
+	z-index: 2; 
+	bottom: 20px; 
+	left: 380px;
+}
+.buttons span {
+	cursor: pointer; 
+	float: left; 
+	border: 1px solid #fff; 
+	width: 10px; 
+	height: 10px; 
+	border-radius: 50%; 
+	background: #333; 
+	margin-right: 5px;
+}
+.buttons .on { background: #fff;}
