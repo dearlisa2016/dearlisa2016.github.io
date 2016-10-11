@@ -1,0 +1,177 @@
+/************
+ * 页面样式
+ ************/
+
+/*=========
+基本默认值
+=========*/
+
+::selection{
+    background-color:#b3d4fc;
+    text-shadow:none;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style:none;
+}
+
+/*=========
+工具样式
+=========*/
+
+.center-block{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.pull-right{
+    float:right !important;
+}
+
+.pull-left{
+    float:left !important;
+}
+
+.text-right{
+    text-align:right !important;
+}
+
+.text-left{
+    text-align:left !important;
+}
+
+.text-center{
+    text-align:center !important;
+}
+
+.hide{
+    display:none !important;
+    /*空间挤压了*/
+}
+
+.show{
+    display:block !important;
+}
+
+.invisible{
+    visibility:hidden;
+    /*空间保留了*/
+}
+
+.text-hide{
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    background-color:transparent;
+    border:0;
+    /*for SEO purpose*/
+    /*如链接会用图片，但加上文本会更友好*/
+}
+
+.clearfix:before,
+.clearfix:after{
+    content:" ";
+    display:table;
+    /*before预防浏览器margin顶部空白崩溃*/
+}
+
+.clearfix:after{
+    clear:both;
+}
+
+/*=========
+浏览器更新提示
+=========*/
+.browserupgrade{
+    margin:0;
+    padding:1rem;
+    background:#ccc;
+}
+
+/*=========
+自定义页面样式
+=========*/
+
+/*通用*/
+a{
+  color:#666;
+  text-decoration:none;
+}
+
+a:hover, a:active{
+    color:#0ae;
+    text-decoration:underline;
+}
+
+
+/*网站头部*/
+header{
+    background-color: #EDF4ED;
+}
+
+header .nav-top ul li{
+    display: inline-block;
+}
+
+header .nav-top .left{
+    float: left;
+}
+
+header .nav-top .right{
+    text-align: right;
+}
+
+header .nav-top{
+    line-height: 30px;
+    padding: 0 20px;
+    background-color: #333;
+}
+
+header .nav-top ul li a{
+    display: inline-block;
+    padding: 0 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header .nav-main ul li{
+    display: inline-block;
+}
+
+header .nav-main ul{
+    text-align: right;
+}
+
+header .nav-main .logo,header .nav-main .logo img{
+    display: block;
+}
+
+header .nav-main .logo{
+    float: left;
+    margin-top: 20px;
+}
+
+header .nav-main{
+    height: 70px;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header .nav-main ul li a{
+    display: inline-block;
+    padding: 0 5px;
+    color: #2D963D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 70px;
+}

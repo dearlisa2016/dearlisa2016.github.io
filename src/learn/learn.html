@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学习顶部导航</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="learn.css">
+</head>
+<body>
+<!-- 我的尝试 -->
+<header>
+	<nav class="nav-top">
+		<ul class="left">
+			<li><a href="#">豆瓣</a></li>
+			<li><a href="#">读书</a></li>
+			<li><a href="#">电影</a></li>
+			<li><a href="#">音乐</a></li>
+			<li><a href="#">同城</a></li>
+			<li><a href="#">小组</a></li>
+			<li><a href="#">阅读</a></li>
+			<li><a href="#">FM</a></li>
+			<li><a href="#">东西</a></li>
+			<li><a href="#">市集</a></li>
+			<li><a href="#">更多</a></li>
+		</ul>
+		<ul class="right">
+			<li><a href="#">下载客户端</a></li>
+			<li><a href="#">提醒</a></li>
+			<li><a href="#">豆邮</a></li>
+			<li><a href="#">个人中心</a></li>
+		</ul>
+	</nav>
+	<nav class="nav-main container">
+		<a href="#" class="logo"><img src="https://img3.doubanio.com/f/shire/8308f83ca66946299fc80efb1f10ea21f99ec2a5/pics/nav/lg_main_a11_1.png" alt="豆瓣LOGO"></a>
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">我的豆瓣</a></li>
+			<li><a href="#">浏览发现</a></li>
+			<li><a href="#">移动应用</a></li>
+			<li><a href="#">游戏</a></li>
+			<li><a href="#">线上活动</a></li>
+		</ul>
+	</nav>
+</header>
+
+<!-- 豆瓣源码 -->
+<div id="db-global-nav" class="global-nav">
+	<div class="bd">
+		<div class="top-nav-info">
+			<span class="perf-metric"><!-- _performtips_ --></span>
+			<ul>
+				<li><a id="top-nav-doumail-link" href="https://www.douban.com/doumail/">豆邮<em>(2)</em></a></li>
+				<li class="nav-user-account">
+					<a target="_blank" href="https://www.douban.com/accounts/" class="bn-more">
+					<span>亲爱的土豆妹的帐号</span><span class="arrow"></span>
+					</a>
+					<div class="more-items">
+						<table cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr><td><a href="https://www.douban.com/mine/">个人主页</a></td></tr>
+								<tr><td><a target="_blank" href="https://www.douban.com/mine/orders/">我的订单</a></td></tr>
+								<tr><td><a target="_blank" href="https://www.douban.com/mine/wallet/">我的钱包</a></td></tr>
+								<tr><td><a target="_blank" href="https://www.douban.com/accounts/">帐号管理</a></td></tr>
+								<tr><td><a href="https://www.douban.com/accounts/logout?source=main&amp;ck=Hqz7">退出</a></td></tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="top-nav-reminder">
+			<a href="https://www.douban.com/notification/" class="lnk-remind">提醒
+			</a>
+			<div id="top-nav-notimenu" class="more-items">
+				<div class="bd">
+					<p>加载中...</p>
+				</div>
+			</div>
+		</div>
+		<div class="top-nav-doubanapp">
+			<a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+			<div id="top-nav-appintro" class="more-items">
+				<p class="appintro-title">豆瓣</p>
+				<p class="slogan">我们的精神角落</p>
+				<p class="qrcode">扫码直接下载	</p>
+				<div class="download">
+				    <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+				    <span>·</span>
+				    <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+				</div>
+			</div>
+			<div id="doubanapp-tip">
+				<a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 4.0 全新发布</a>
+				<a href="javascript: void 0;" class="tip-close">×</a>
+			</div>
+		</div>
+		<div class="global-nav-items">
+			<ul>
+				<li class="on">
+					<a href="https://www.douban.com/" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;42835699&quot;}">豆瓣</a>
+				</li>
+				<li class="">
+					<a href="https://book.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;42835699&quot;}">读书</a>
+				</li>
+				<li class="">
+					<a href="https://movie.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;42835699&quot;}">电影</a>
+				</li>
+				<li class="">
+					<a href="https://music.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;42835699&quot;}">音乐</a>
+				</li>
+				<li class="">
+					<a href="https://www.douban.com/location/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;42835699&quot;}">同城</a>
+				</li>
+				<li class="">
+					<a href="https://www.douban.com/group/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;42835699&quot;}">小组</a>
+				</li>
+				<li class="">
+					<a href="https://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;42835699&quot;}">阅读</a>
+				</li>
+				<li class="">
+					<a href="https://douban.fm/?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;42835699&quot;}">FM</a>
+				</li>
+				<li class="">
+					<a href="https://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-commodity&quot;,&quot;uid&quot;:&quot;42835699&quot;}">东西</a>
+				</li>
+				<li class="">
+					<a href="https://market.douban.com/?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-market&quot;,&quot;uid&quot;:&quot;42835699&quot;}">市集</a>
+				</li>
+				<li>
+					<a href="#more" class="bn-more"><span>更多</span></a>
+					<div class="more-items">
+						<table cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr><td><a href="https://moment.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-moment&quot;,&quot;uid&quot;:&quot;42835699&quot;}">一刻</a></td></tr>
+
+								<tr><td><a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-ypy&quot;,&quot;uid&quot;:&quot;42835699&quot;}">豆瓣摄影</a></td></tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="nav-wrap">
+	<div class="nav-primary">
+		<div class="nav-search">
+			<form action="https://www.douban.com/search" method="get">
+				<fieldset>
+					<legend>搜索：</legend>
+					<label style="display: none;" for="inp-query">搜索你感兴趣的内容和人...</label>
+					<div class="inp">
+						<input name="source" value="suggest" type="hidden">
+						<input placeholder="搜索你感兴趣的内容和人..." id="inp-query" name="q" size="22" title="搜索搜索你感兴趣的内容和人..." maxlength="60" autocomplete="off" value="">
+					</div>
+					<div class="inp-btn"><input value="搜索" type="submit"></div>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="nav-logo">
+			<a href="https://www.douban.com">豆瓣社区</a>
+		</div>
+
+		<div class="nav-items">
+			<ul>
+				<li><a href="https://www.douban.com/">首页</a></li>
+				<li><a href="https://www.douban.com/mine/">我的豆瓣</a></li>
+				<li>
+					<a href="https://www.douban.com/explore/">浏览发现</a>
+					<img src="https://img3.doubanio.com/f/shire/e49eca1517424a941871a2667a8957fd6c72d632/pics/new_menu.gif" alt="new">
+				</li>
+				<li>
+					<a href="https://www.douban.com/app/">移动应用</a>
+				</li>
+				<li>
+					<a href="https://www.douban.com/game/explore?dcs=sns-nav&amp;dcm=douban">游戏</a>
+				</li>
+				<li><a href="https://www.douban.com/online/">线上活动</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
