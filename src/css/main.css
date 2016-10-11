@@ -71,6 +71,7 @@ li{
     margin:0;
     padding:5px 0;
     background:#ccc;
+    font-size: 0.12rem;/*因为rem.js插件对body无效*/
 }
 
 /*=========
@@ -112,6 +113,7 @@ header .nav-top  ul li{
 
 header .nav-top span{
     float: left;
+    font-size: 0.12rem;/*因为rem.js插件对body无效*/
 }
 
 header .nav-top  ul{
@@ -128,6 +130,7 @@ header .nav-top{
 header .nav-top  ul li a{
     padding: 0 0.15rem;
     color: #fff;
+    font-size: 0.12rem; /*因为rem.js插件对body无效*/
 }
 
 header .nav-top  ul li+li{
@@ -799,6 +802,10 @@ footer ul li .icon-gs {
 
 footer p {
     color: #999;
+}
+
+footer .copyright{
+    font-size: 0.12rem;/*因为rem.js插件对body无效*/
 }
 
 /*=========
