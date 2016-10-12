@@ -201,9 +201,11 @@ header .nav-main ul li a{
     display: none;
 }
     header .nav-top  ul li+li+li,
-    header .nav-top  ul li+li+li+li,
     header .nav-main  ul li:first-child{
         display: none;
+    }
+    header .nav-top  ul li:last-child{
+        display: inline-block;
     }
     /*IE8不支持:nth-child(4) */
     header .nav-main ul li a{
