@@ -193,10 +193,11 @@
 
             div.style.cssText = 'width:1em; position:absolute; visibility:hidden; padding: 0;';
 
-            body.style.fontSize = '1em';
-
-            // body.appendChild( div );
+            // body.style.fontSize = '1em';
             // 10.12把这句话注释掉，不然不知为何影响页面nav和notice
+
+            body.appendChild( div );
+
             size = div.offsetWidth;
 
             if ( isFakeBody ) {
