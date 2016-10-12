@@ -26,12 +26,9 @@
 <p class="browserupgrade">您的浏览器版本太低，请到<a href="http://browsehappy.com/">这里</a>更新，以获取最佳的用户体验。</p>
 <![endif]-->
 
-<!-- 1.1写html结构之header和footer -->
-<!-- 2.1写header和footer的css样式 -->
 <header>
 	<nav class="nav-top">
 		<span>理财热线：400-888-8888</span>
-		<!-- 我用的是div，而老师用span -->
 		<ul>
 			<li><a href="#">登录</a></li>
 			<li><a href="#">快速注册</a></li>
@@ -39,11 +36,9 @@
 			<li><a href="#">帮助</a></li>
 			<li><a href="#">APP下载</a></li>
 		</ul>
-		<!-- 用列表做导航的时候我总是少了a，登录写成登陆 -->
 	</nav>
 	<nav class="nav-main clearfix">
 		<a href="#" class="logo"><img src="img/logo@1x.png" alt="回到首页"></a>
-		<!-- logo的部分要用a+img方式，我原来少了a，img的alt尽量要写 -->
 		<ul>
 			<li><a href="#">首页</a></li>
 			<li><a href="#">理财频道</a></li>
@@ -55,7 +50,6 @@
 </header>
 
 
-<!-- 1.2写html结构之主体，老师用了div.container包裹，我没用 -->
 <section class="transaction">
 	<div class="pub-container clearfix">
 			<div class="data">
@@ -71,9 +65,7 @@
 			<div class="report"><a href="#">查看平台运营报告</a></div>
 	</div>
 </section>
-<!-- 	这种左右分别对齐的格式还是用div为主
-	老师这里用了一个content来包裹3个div，我没有用
-	有超链接的地方要注意加a，如查看报告 -->
+
 
 
 <section class="banner">
@@ -101,7 +93,6 @@
 	</a>
 	</div>
 </section>
-<!-- 	老师这里用的是div包裹，但考虑到超链接我用a标签包裹 -->
 
 
 <section class="feature clearfix">
@@ -118,14 +109,12 @@
 		<p>100元起投<br />用户利益保障机制<br />保险公司承保</p>
 	</div>
 </section>
-<!-- 	我少了将每个item包裹起来，少了用标题 -->
 
 
 <section class="notice">
 	<a href="#" class="new"><span>2016-9-20</span>国庆期间业务受理及值班公告点击查看点击查看点击查看点击查看点击查看点击查看点击查看点击查看点击查看点击查看</a>
 	<a href="#" class="more">更多公告</a>
 </section>
-<!-- 	这里最新公告没有写，要怎么处理？ -->
 
 
 <section class="product clearfix">
@@ -134,7 +123,6 @@
 		<em>省时省力</em>
 		<em>坐等收益</em>
 	</h2>
-<!-- 		em在h2里面 -->
 
 	<div class="product-content">
 		<div class="item clearfix">
@@ -179,11 +167,6 @@
 		</div>
 	</div>
 </section>
-<!-- 	老师和我的做法略有不同，值得参考的是他没有用那么多的span和类名，而是有些用em和i，如产品卖点/月份用em，起/万元等小字用i；
-另外收益率和金额虽然样式一样，但不要用同样的样式名，因为意义不同，用不同的样式名设为同样的样式即可；
-约定收益率与金额中间没有横线，可作为一个div ；
-购买按钮我直接用a，没用div外裹；
-我本来在h2外包裹了div.product-type，其实也不需要嘛-->
 
 <section class="product clearfix">
 	<h2>债权/散标产品
@@ -269,8 +252,7 @@
 		</ul>
 	</div>
 </nav>
-<!-- 	老师说因为背景色不一样，要多内嵌一层div.content，不太明白；
-老师这里用的是好几个无序列表，而不是嵌套的无序列表 -->
+
 
 
 <footer>
@@ -283,10 +265,7 @@
 		<li><span class="icon icon-rzcx">电子商务协会认证诚信网</span></li>
 		<li><span class="icon icon-gs">北京工商</span></li>
 	</ul>
-	<!-- 证书不需要超链接，但li中要加span，我本来没加；其实一般网站的认证还是超链接，用a更好 -->
-	<!-- 老师为何要在span中加文字呢？ -->
 	<p class="copyright text-center">北京某互联网金融公司 版权所有 &copy;2015-2016</p>
-	<!-- 老师用的是p，我原来用div，因为怕还要设置格式，但是从语义考虑，还是p比较好 -->
 </footer>
 <script type="text/javascript" src="js/vendor/jquery-1.11.3/jquery.js"></script>
 <script type="text/javascript" src="js/vendor/owl.carousel.2.1.0/owl.carousel.js"></script>

@@ -49,15 +49,12 @@ li{
     text-shadow:none;
     background-color:transparent;
     border:0;
-    /*for SEO purpose*/
-    /*如链接会用图片，但加上文本会更友好*/
 }
 
 .clearfix:before,
 .clearfix:after{
     content:" ";
     display:table;
-    /*before预防浏览器margin顶部空白崩溃*/
 }
 
 .clearfix:after{
@@ -100,12 +97,7 @@ a:hover, a:active{
 }
 
 /*网站头部*/
-/*难点：
-1. 列表做水平导航
-2. 分别在左右，与浏览器有左右间距
-3. 单行文本垂直居中，此处设置line-height即可
-4. 数值用固定还是比例
-5. 导航右侧竖线*/
+
 
 header{
     font-size: 0; /*for IE8*/
@@ -195,9 +187,6 @@ header .nav-main ul li a{
 }
 }
 
-@media only screen and (min-width: 30.0625em) and (max-width: 50em){
-
-}
 
 @media only screen and (max-width: 30em){
     header .nav-top span{
@@ -219,7 +208,6 @@ header .nav-main ul li a{
 }
 }
 /*交易数据*/
-/*难点在于对齐*/
 
 .transaction{
     background-color: #7c7365;
@@ -287,9 +275,6 @@ padding: 0;
 }
 }
 
-@media only screen and (min-width: 30.0625em) and (max-width: 50em){
-
-}
 
 @media only screen and (max-width: 30em){
     .transaction .pub-container .data,
@@ -305,23 +290,6 @@ padding: 0;
     }
 }
 /*平台特点*/
-/*难点：
-h3和p用百分比宽度好过于用padding。
-item间的间距：+选择器
-浮动元素的margin/padding：其实不是这个问题
-item的高度是如何决定的：
--由内容撑开，h3大则p不居中，h3小则p居中
-item中的内容如何水平垂直居中：
-两个margin,padding,line-height同*/
-
-/*老师这个部分的关键在于：
-item用inline block，宽度用计算，我直接用32%
-h3和p都是用的inline block，宽度百分比
-同时给父元素.feature设置了fontsize为0
-而我用的是浮动*/
-
-/*注意：使用normalize的时候p和h等有默认的margin和padding
-浮动元素的行高默认继承父级的*/
 
 .feature{
     width: 90%;
@@ -361,9 +329,6 @@ h3和p都是用的inline block，宽度百分比
     line-height: 0.22rem;
 }
 
-@media only screen and (max-width: 50em){
-
-}
 
 @media only screen and (min-width: 30.0625em) and (max-width: 50em){
     .feature .item h3,
@@ -445,9 +410,6 @@ h3和p都是用的inline block，宽度百分比
 
 }
 
-@media only screen and (min-width: 30.0625em) and (max-width: 50em){
-
-}
 
 @media only screen and (max-width: 30em){
     .notice{
@@ -471,7 +433,6 @@ h3和p都是用的inline block，宽度百分比
     }
 }
 /*产品介绍*/
-/*难点在于item内三个元素的顶端对齐*/
 .product{
     width: 90%;
     margin: 0.2rem auto;
@@ -486,7 +447,6 @@ h3和p都是用的inline block，宽度百分比
     width: 22%;
     font-size: 0.24rem;
     text-align: center;
-/*    line-height: 0.6rem;*/
     color: #635c51;
     margin-top: 0.3rem;
 }
@@ -609,8 +569,6 @@ h3和p都是用的inline block，宽度百分比
     }
     .product .product-content{
         font-size: 0.12rem;
-/*        为什么写完这句，
-不会把.product-content的所有内容字号都覆盖12px？*/
     }
     .product-content .item .duration em{
     font-size: 0.3rem;
@@ -640,9 +598,6 @@ h3和p都是用的inline block，宽度百分比
     }
 }
 
-@media only screen and (min-width: 30.0625em) and (max-width: 50em){
-
-}
 
 @media only screen and (max-width: 30em){
     .product{
@@ -726,10 +681,6 @@ h3和p都是用的inline block，宽度百分比
         font-size: 0.14rem;
         line-height: 0.28rem;
     }
-}
-
-@media only screen and (min-width: 30.0625em) and (max-width: 50em){
-
 }
 
 @media only screen and (max-width: 30em){
@@ -885,6 +836,5 @@ footer .copyright{
     h3{
         page-break-after: avoid;
     }
-
 
 }
