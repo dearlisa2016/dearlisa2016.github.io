@@ -200,11 +200,12 @@ header .nav-main ul li a{
     header .nav-top span{
     display: none;
 }
-    header .nav-top  ul li:nth-child(3),
-    header .nav-top  ul li:nth-child(4),
-    header .nav-main  ul li:nth-child(1){
+    header .nav-top  ul li+li+li,
+    header .nav-top  ul li+li+li+li,
+    header .nav-main  ul li:first-child{
         display: none;
     }
+    /*IE8不支持:nth-child(4) */
     header .nav-main ul li a{
     padding: 0 0.05rem;
     font-weight:normal;
@@ -382,7 +383,8 @@ h3和p都是用的inline block，宽度百分比
     }
     .feature .item+.item{
     margin-left:0;
-    margin-top: 0.1rem;
+/*    margin-top: 0.1rem; IE8中此句无效？*/
+    margin-top: 10px;
     }
 }
 /*最新公告*/
@@ -750,7 +752,7 @@ footer ul li .icon{
     display: inline-block;
     text-indent: -999rem;
     margin-right: 0.15rem;
-    background: url(https://i.alipayobjects.com/e/201307/jebmKcbrh.png) no-repeat;
+    background: url(../img/cert1-s.png) no-repeat;
     background-size: 466px 447px;
     overflow: hidden;
 }

@@ -121,7 +121,7 @@
         try {
             //try to create a request object
             //arranging the two conditions this way is for IE7/8's benefit
-            //so that it works with any combination of ActiveX or Native XHR settings, 
+            //so that it works with any combination of ActiveX or Native XHR settings,
             //as long as one or the other is enabled; but if both are enabled
             //it prefers ActiveX, which means it still works with local files
             //(Native XHR in IE7/8 is blocked and throws "access is denied",
@@ -195,7 +195,8 @@
 
             body.style.fontSize = '1em';
 
-            body.appendChild( div );
+            // body.appendChild( div );
+            // 10.12把这句话注释掉，不然不知为何影响页面nav和notice
             size = div.offsetWidth;
 
             if ( isFakeBody ) {
