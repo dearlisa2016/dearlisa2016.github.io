@@ -108,7 +108,7 @@ a:hover, a:active{
 5. 导航右侧竖线*/
 
 header{
-    font-size: 0;
+    font-size: 0; /*for IE8*/
 }
 header .nav-top  ul li{
     display: inline-block;
@@ -203,7 +203,8 @@ header .nav-main ul li a{
     header .nav-top span{
     display: none;
 }
-    header .nav-top  ul li+li+li,
+    header .nav-top  ul li:first-child+li+li,
+    header .nav-top  ul li:first-child+li+li+li,
     header .nav-main  ul li:first-child{
         display: none;
     }
@@ -223,7 +224,7 @@ header .nav-main ul li a{
 .transaction{
     background-color: #7c7365;
     padding: 0.1rem 0;
-    font-size: 0;
+    font-size: 0; /*for IE8*/
 }
 
 .transaction .pub-container .data{
@@ -400,7 +401,7 @@ h3和p都是用的inline block，宽度百分比
     margin:0.2rem auto;
     box-shadow: 0 0 1px #999;
     height: 0.3rem;
-    font-size: 0;
+    font-size: 0; /*for IE8*/
 }
 
 .notice a{
@@ -753,6 +754,7 @@ footer{
     text-align: center;
     background-color: #ededed;
     padding: 0.3rem 0;
+    font-size: 0;   /*for IE8*/
 }
 
 footer ul li .icon{
