@@ -33,17 +33,17 @@ $(document).ready(function() {
 							move('.skills h1').set('opacity','1').end();
 							move('.skills h1').set('transform','translateX(0)').end(function(){
 							move('.skills .html').set('width','90%').duration('1.5s').end();
-							move('.skills .html').set('animation','reverse progress-bar-stripes 0.4s linear infinite').end();
+							move('.skills .html').set('animation','reverse progress-bar-stripes 1s linear infinite').end();
 							move('.skills .css').set('width','85%').duration('1.5s').end();
-							move('.skills .css').set('animation','reverse progress-bar-stripes 0.4s linear infinite').end();
+							move('.skills .css').set('animation','reverse progress-bar-stripes 1s linear infinite').end();
 							move('.skills .js').set('width','75%').duration('1.5s').end();
-							move('.skills .js').set('animation','reverse progress-bar-stripes 0.4s linear infinite').end();
+							move('.skills .js').set('animation','reverse progress-bar-stripes 1s linear infinite').end();
 							move('.skills .jq').set('width','80%').duration('1.5s').end();
-							move('.skills .jq').set('animation','reverse progress-bar-stripes 0.4s linear infinite').end();
+							move('.skills .jq').set('animation','reverse progress-bar-stripes 1s linear infinite').end();
 							move('.skills .bs').set('width','70%').duration('1.5s').end();
-							move('.skills .bs').set('animation','reverse progress-bar-stripes 0.4s linear infinite').end();
+							move('.skills .bs').set('animation','reverse progress-bar-stripes 1s linear infinite').end();
 							move('.skills .ps').set('width','70%').duration('1.5s').end();
-							move('.skills .ps').set('animation','reverse progress-bar-stripes 0.4s linear infinite').end();
+							move('.skills .ps').set('animation','reverse progress-bar-stripes 1s linear infinite').end();
 							});
 						break;
 						case 4:
